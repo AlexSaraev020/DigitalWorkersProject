@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .text-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container h1 {
+    margin: 0;
+    font-size: 8vw;
+    color: rgba(225, 225, 225, 0.01);
+    background-image: url("https://images.unsplash.com/photo-1494608875625-6a44a9aa61f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25% {
+      background-position: 100% 100%;
+    }
+    50% {
+      background-position: 0% 100%;
+    }
+    75% {
+      background-position: 100% 0%;
+    }
+  }
+
+  /* Media query pentru dispozitive cu lățimea mai mică de 600px */
+  @media (max-width: 600px) {
+    .text-container {
+      height: 20vh;
+    }
+    .text-container h1 {
+      font-size: 8vw;
+    }
+  }
+  
